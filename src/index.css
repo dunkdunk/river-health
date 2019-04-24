@@ -1,9 +1,7 @@
 body {
   margin: 1rem;
   padding: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #11110c;
@@ -55,6 +53,29 @@ Gray palette
 .box__channel {
   font-size: 14px;
   text-transform: capitalize;
+  padding: 10px 0;
+  border-bottom: 1px dotted #23241d;
+  display: flex;
 }
 
+.box__display {
+  display: flex;
+  flex: 1;
+}
+
+.box__value {
+  display: flex;
+}
+
+.box__divider {
+  padding: 2rem 0 1rem;
+}
+
+.loader {
+  display: flex;
+  flex: 1;
+  min-height: 500px;
+  justify-content: center;
+  align-items: center;
+}
 
