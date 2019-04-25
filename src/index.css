@@ -41,16 +41,22 @@ Gray palette
 .box {
   padding: 1rem;
   border: 2px dotted #23241d;
+  margin-bottom: 1rem;
 }
 
 .box__title {
   font-size: 16px;
   line-height: 0;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
-.box__channel {
+.box__divider {
+  padding: 2rem 0 1rem;
+}
+
+.channel {
   font-size: 14px;
   text-transform: capitalize;
   padding: 10px 0;
@@ -58,17 +64,13 @@ Gray palette
   display: flex;
 }
 
-.box__display {
+.channel__display {
   display: flex;
   flex: 1;
 }
 
-.box__value {
+.channel__value {
   display: flex;
-}
-
-.box__divider {
-  padding: 2rem 0 1rem;
 }
 
 .loader {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import Channel from './Channel';
 import loader from './assets/loader.svg';
 
 class App extends Component {
@@ -49,59 +50,55 @@ class App extends Component {
         )}
         {!this.state.loading && (
           <div>
-            <h1>River Health</h1>
+            <h1><i class="fas fa-water"></i></h1>
             <p>An overview of current watershed data in Colorado.</p>
             <div className="row">
               <div className="col-xs-12 col-sm-12 col-md-4">
                 <div className="box">
                   <h2 className="box__title">South Platte</h2>
-                  <div className="box__channel">
-                    <span className="box__display">Above Spinney</span> <span className="box__value">{this.getChannel('PLASPICO').amount}cfs</span>
-                  </div>
-                  <div className="box__channel">
-                    <span className="box__display">Dream Stream</span> <span className="box__value">{this.getChannel('PLAHARCO').amount}cfs</span>
-                  </div>
-                  <div className="box__channel">
-                    <span className="box__display">11 Mile Canyon</span> <span className="box__value">{this.getChannel('PLAGEOCO').amount}cfs</span>
-                  </div>
-                  <div className="box__channel">
-                    <span className="box__display">Cheesman Canyon</span> <span className="box__value">{this.getChannel('PLACHECO').amount}cfs</span>
-                  </div>
-                  <div className="box__channel">
-                    <span className="box__display">North Fork Convergence</span> <span className="box__value">{this.getChannel('PLASPLCO').amount}cfs</span>
-                  </div>
-                  <div className="box__channel">
-                    <span className="box__display">Waterton Canyon</span> <span className="box__value">{this.getChannel('PLASTRCO').amount}cfs</span>
-                  </div>
-                  <div className="box__channel">
-                    <span className="box__display">Above Chatfield</span> <span className="box__value">{this.getChannel('PLAWATCO').amount}cfs</span>
-                  </div>
-                  <div className="box__channel">
-                    <span className="box__display">Below Chatfield</span> <span className="box__value">{this.getChannel('PLACHACO').amount}cfs</span>
-                  </div>
-                  <div className="box__channel">
-                    <span className="box__display">DSP</span> <span className="box__value">{this.getChannel('PLADENCO').amount}cfs</span>
-                  </div>
+                  <Channel display={'Above Spinney'} value={this.getChannel('PLASPICO').amount} />
+                  <Channel display={'Dream Stream'} value={this.getChannel('PLAHARCO').amount} />
+                  <Channel display={'11 Mile Canyon'} value={this.getChannel('PLAGEOCO').amount} />
+                  <Channel display={'Cheesman Canyon'} value={this.getChannel('PLACHECO').amount} />
+                  <Channel display={'North Fork Convergence'} value={this.getChannel('PLASPLCO').amount} />
+                  <Channel display={'Waterton Canyon'} value={this.getChannel('PLASTRCO').amount} />
+                  <Channel display={'Above Chatfield'} value={this.getChannel('PLAWATCO').amount} />
+                  <Channel display={'Below Chatfield'} value={this.getChannel('PLACHACO').amount} />
+                  <Channel display={'DSP'} value={this.getChannel('PLADENCO').amount} />
                   <div className="box__divider">• • •</div>
-                  <div className="box__channel">
-                    <span className="box__display">Clear Creek</span> <span className="box__value">{this.getChannel('CLEGOLCO').amount}cfs</span>
-                  </div>
-                  <div className="box__channel">
-                    <span className="box__display">North Fork</span> <span className="box__value">{this.getChannel('PLABAICO').amount}cfs</span>
-                  </div>
-                  <div className="box__channel">
-                    <span className="box__display">Bear Creek</span> <span className="box__value">{this.getChannel('BCRMORCO').amount}cfs</span>
-                  </div>
+                  <Channel display={'Clear Creek'} value={this.getChannel('CLEGOLCO').amount} />
+                  <Channel display={'North Fork'} value={this.getChannel('PLABAICO').amount} />
+                  <Channel display={'Bear Creek'} value={this.getChannel('BCRMORCO').amount} />
                 </div>
               </div>
               <div className="col-xs-12 col-sm-12 col-md-4">
                 <div className="box">
                   <h2 className="box__title">Colorado</h2>
+                  <p>Coming soon</p>
                 </div>
               </div>
               <div className="col-xs-12 col-sm-12 col-md-4">
                 <div className="box">
                   <h2 className="box__title">Gunnison</h2>
+                  <p>Coming soon</p>
+                </div>
+              </div>
+              <div className="col-xs-12 col-sm-12 col-md-4">
+                <div className="box">
+                  <h2 className="box__title">Arkansas</h2>
+                  <p>Coming soon</p>
+                </div>
+              </div>
+              <div className="col-xs-12 col-sm-12 col-md-4">
+                <div className="box">
+                  <h2 className="box__title">San Juan</h2>
+                  <p>Coming soon</p>
+                </div>
+              </div>
+              <div className="col-xs-12 col-sm-12 col-md-4">
+                <div className="box">
+                  <h2 className="box__title">Yampa/White</h2>
+                  <p>Coming soon</p>
                 </div>
               </div>
             </div>
