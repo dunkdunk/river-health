@@ -56,19 +56,19 @@ class App extends Component {
               <div className="col-xs-12 col-sm-12 col-md-4">
                 <div className="box">
                   <h2 className="box__title">South Platte</h2>
-                  <Channel display={'Above Spinney'} value={this.getChannel('PLASPICO').amount} />
-                  <Channel display={'Dream Stream'} value={this.getChannel('PLAHARCO').amount} />
-                  <Channel display={'11 Mile Canyon'} value={this.getChannel('PLAGEOCO').amount} />
-                  <Channel display={'Cheesman Canyon'} value={this.getChannel('PLACHECO').amount} />
-                  <Channel display={'North Fork Convergence'} value={this.getChannel('PLASPLCO').amount} />
-                  <Channel display={'Waterton Canyon'} value={this.getChannel('PLASTRCO').amount} />
-                  <Channel display={'Above Chatfield'} value={this.getChannel('PLAWATCO').amount} />
-                  <Channel display={'Below Chatfield'} value={this.getChannel('PLACHACO').amount} />
-                  <Channel display={'DSP'} value={this.getChannel('PLADENCO').amount} />
+                  <Channel display={'Above Spinney'} value={this.getChannel('PLASPICO')} />
+                  <Channel display={'Dream Stream'} value={this.getChannel('PLAHARCO')} />
+                  <Channel display={'11 Mile Canyon'} value={this.getChannel('PLAGEOCO')} />
+                  <Channel display={'Cheesman Canyon'} value={this.getChannel('PLACHECO')} />
+                  <Channel display={'North Fork Convergence'} value={this.getChannel('PLASPLCO')} />
+                  <Channel display={'Waterton Canyon'} value={this.getChannel('PLASTRCO')} />
+                  <Channel display={'Above Chatfield'} value={this.getChannel('PLAWATCO')} />
+                  <Channel display={'Below Chatfield'} value={this.getChannel('PLACHACO')} />
+                  <Channel display={'DSP'} value={this.getChannel('PLADENCO')} />
                   <div className="box__divider">• • •</div>
-                  <Channel display={'Clear Creek'} value={this.getChannel('CLEGOLCO').amount} />
-                  <Channel display={'North Fork'} value={this.getChannel('PLABAICO').amount} />
-                  <Channel display={'Bear Creek'} value={this.getChannel('BCRMORCO').amount} />
+                  <Channel display={'Clear Creek'} value={this.getChannel('CLEGOLCO')} />
+                  <Channel display={'North Fork'} value={this.getChannel('PLABAICO')} />
+                  <Channel display={'Bear Creek'} value={this.getChannel('BCRMORCO')} />
                 </div>
               </div>
               <div className="col-xs-12 col-sm-12 col-md-4">
