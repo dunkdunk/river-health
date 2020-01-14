@@ -58,7 +58,6 @@ Gray palette
 
 .channel {
   font-size: 14px;
-  text-transform: capitalize;
   padding: 10px 0;
   border-bottom: 1px dotted #23241d;
   display: flex;
@@ -67,6 +66,7 @@ Gray palette
 .channel__display {
   display: flex;
   flex: 1;
+  text-transform: capitalize;
 }
 
 .channel__value {

@@ -32,9 +32,7 @@ class App extends Component {
   }
 
   getChannel(name) {
-    return this.state.waterData.find((site) => {
-      return site.dwr_abbrev === name;
-    });
+    return this.state.waterData.find((site) => site.dwr_abbrev === name);
   }
 
   render() {
