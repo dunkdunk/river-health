@@ -14,22 +14,19 @@ class App extends Component {
   }
 
   componentDidMount() {
-    let that = this;
-
     axios.get('https://data.colorado.gov/resource/a97x-8zfv.json', {
       data: {
         "$limit" : 5000,
         "$app_token" : "apMkTWDqzTnHxh2Kh84rGKL8Y"
       }
     })
-    .then(function (response) {
-      console.log(response);
-      that.setState({
+    .then((response) => {
+      this.setState({
         waterData: response.data,
         loading: false
       });
     })
-    .catch(function (error) {
+    .catch((error) => {
       console.log(error);
     })
   }
